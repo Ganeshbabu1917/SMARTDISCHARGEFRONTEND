@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://localhost:8086/api'; // Your backend port
+const API_BASE_URL = 'http://ec2-13-201-225-231.ap-south-1.compute.amazonaws.com:8086/api'; // Your backend port
 
 export const patientService = {
     // GET all patients
