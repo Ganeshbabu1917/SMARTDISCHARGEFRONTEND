@@ -1,0 +1,217 @@
+.email-notification {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border-left: 4px solid #4299e1;
+}
+
+.email-notification.warning {
+    border-left-color: #f56565;
+    background: #fff5f5;
+    color: #c53030;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.email-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.email-header h3 {
+    color: #2d3748;
+    font-size: 18px;
+    margin: 0;
+}
+
+.patient-email {
+    background: #ebf8ff;
+    color: #2b6cb0;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    word-break: break-all;
+}
+
+.email-message {
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.email-message.success {
+    background: #c6f6d5;
+    color: #22543d;
+    border-left: 4px solid #48bb78;
+}
+
+.email-message.error {
+    background: #fed7d7;
+    color: #742a2a;
+    border-left: 4px solid #f56565;
+}
+
+.email-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.email-btn {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    color: white;
+    font-size: 14px;
+}
+
+.email-btn.summary {
+    background: #4299e1;
+}
+.email-btn.payment {
+    background: #48bb78;
+}
+.email-btn.appointment {
+    background: #ed8936;
+}
+.email-btn.medicine {
+    background: #9f7aea;
+}
+
+.email-btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.email-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Appointment Modal */
+.appointment-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1200;
+    padding: 20px;
+}
+
+.appointment-modal .modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 400px;
+    animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.appointment-modal h4 {
+    color: #2d3748;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.appointment-modal input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.appointment-modal input:focus {
+    outline: none;
+    border-color: #4299e1;
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.1);
+}
+
+.appointment-modal .modal-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.appointment-modal .modal-actions button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.appointment-modal .modal-actions button:first-child {
+    background: #4299e1;
+    color: white;
+}
+
+.appointment-modal .modal-actions button:last-child {
+    background: #a0aec0;
+    color: white;
+}
+
+.appointment-modal .modal-actions button:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.appointment-modal .modal-actions button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .email-buttons {
+        grid-template-columns: 1fr;
+    }
+    
+    .email-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

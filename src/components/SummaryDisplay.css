@@ -1,0 +1,387 @@
+.summary-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 40px;
+    background: white;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #1e293b;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+/* Hospital Header */
+.hospital-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hospital-header h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #0f172a;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.hospital-header p {
+    color: #475569;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.divider {
+    height: 2px;
+    background: #e2e8f0;
+    margin: 15px 0;
+}
+
+.hospital-header h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #334155;
+    margin: 10px 0 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.date {
+    color: #64748b !important;
+    font-size: 14px;
+}
+
+/* Sections */
+.section {
+    margin-bottom: 25px;
+    padding: 20px;
+    background: #f8fafc;
+    border-radius: 8px;
+    border-left: 4px solid #3b82f6;
+}
+
+.section h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #0f172a;
+    margin: 0 0 15px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Info Grid */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.info-grid div {
+    font-size: 15px;
+    color: #334155;
+}
+
+/* Diagnosis */
+.diagnosis {
+    font-size: 18px;
+    font-weight: 500;
+    color: #0f172a;
+    margin: 0;
+}
+
+/* Two Column Layout */
+.two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Lists */
+ol {
+    margin: 0;
+    padding-left: 20px;
+}
+
+li {
+    margin: 8px 0;
+    color: #334155;
+}
+
+/* Follow-up Table */
+.followup-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.followup-table tr {
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.followup-table td {
+    padding: 10px 5px;
+    color: #334155;
+}
+
+/* Insights */
+.insights ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.insights li {
+    padding: 10px;
+    background: white;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    border: 1px solid #e2e8f0;
+}
+
+.bullet {
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+/* Patient Section */
+.patient-section {
+    background: #f0fdf4;
+    border-left: 4px solid #22c55e;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 25px 0;
+}
+
+.patient-section h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #166534;
+    margin: 0 0 15px 0;
+}
+
+.patient-section p {
+    color: #14532d;
+    margin: 10px 0;
+}
+
+.patient-section ul {
+    color: #14532d;
+}
+
+.wishes {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #86efac;
+}
+
+/* Emergency Section */
+.emergency-section {
+    background: #fee2e2;
+    border-left: 4px solid #ef4444;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 25px 0;
+}
+
+.emergency-section h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #991b1b;
+    margin: 0 0 15px 0;
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.contacts span {
+    background: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #7f1d1d;
+}
+
+/* Footer */
+.footer {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #e2e8f0;
+    text-align: center;
+}
+
+.footer p {
+    margin: 5px 0;
+    color: #475569;
+}
+
+.footer .small {
+    font-size: 12px;
+    color: #94a3b8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .summary-container {
+        padding: 20px;
+    }
+    
+    .two-column {
+        grid-template-columns: 1fr;
+    }
+    
+    .contacts {
+        flex-direction: column;
+    }
+    
+    .contacts span {
+        text-align: center;
+    }
+}
+/* Medication Schedule */
+.medication-schedule {
+    background: #f8fafc;
+}
+
+.schedule-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.schedule-time {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.time-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.time-icon {
+    font-size: 20px;
+}
+
+.time-label {
+    font-weight: 700;
+    font-size: 16px;
+    color: #0f172a;
+}
+
+.time-desc {
+    font-size: 13px;
+    color: #64748b;
+    margin-left: auto;
+}
+
+.med-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.med-item {
+    display: grid;
+    grid-template-columns: 120px 80px 1fr;
+    gap: 10px;
+    padding: 8px;
+    background: #f8fafc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.med-name {
+    font-weight: 600;
+    color: #0f172a;
+}
+
+.med-dosage {
+    color: #3b82f6;
+    font-weight: 500;
+}
+
+.med-instruction {
+    color: #475569;
+}
+
+/* Morning specific */
+.schedule-time.morning .time-header {
+    border-bottom-color: #fbbf24;
+}
+
+/* Afternoon specific */
+.schedule-time.afternoon .time-header {
+    border-bottom-color: #f97316;
+}
+
+/* Evening specific */
+.schedule-time.evening .time-header {
+    border-bottom-color: #6366f1;
+}
+
+.med-tips {
+    background: #fff7ed;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.med-tips ul {
+    margin: 10px 0 0;
+    padding-left: 20px;
+}
+
+.med-tips li {
+    margin: 5px 0;
+    color: #9a3412;
+}
+
+/* Patient Medications */
+.patient-meds {
+    background: #f0fdf4;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.patient-meds ul {
+    list-style: none;
+    padding: 0;
+}
+
+.patient-meds li {
+    padding: 8px;
+    margin: 5px 0;
+    background: white;
+    border-radius: 6px;
+    border-left: 4px solid #22c55e;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .med-item {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+    
+    .time-header {
+        flex-wrap: wrap;
+    }
+    
+    .time-desc {
+        margin-left: 0;
+        width: 100%;
+    }
+}
