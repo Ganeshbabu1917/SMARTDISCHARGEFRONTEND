@@ -1,5 +1,5 @@
-const API_BASE_URL = 'http://ec2-13-201-225-231.ap-south-1.compute.amazonaws.com:8086/api';
 
+const API_BASE_URL = 'http://ec2-13-203-67-191.ap-south-1.compute.amazonaws.com:8086/api';
 export const billingService = {
     // Get billing by patient ID
     getBillingByPatientId: async (patientId) => {
