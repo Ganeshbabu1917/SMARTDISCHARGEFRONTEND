@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://ec2-13-203-67-191.ap-south-1.compute.amazonaws.com:8086/api';
+const API_BASE_URL = 'http://ec2-13-126-142-30.ap-south-1.compute.amazonaws.com:8086/api';
 
 export const authService = {
     // Sign up new user with role
